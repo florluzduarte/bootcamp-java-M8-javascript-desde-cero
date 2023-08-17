@@ -107,16 +107,13 @@ const calcularEgresos = (data) => {
 
 const calcularFlujoDeCaja = (ingresos, egresos) => {
   const resultadoDelFlujo = ingresos - egresos;
-  const elementoPadre = document.getElementById("message");
-  const mensaje = document.createElement("h3");
+  const mensaje = document.getElementById("message");
   if (Math.sign(resultadoDelFlujo) === -1) {
     mensaje.innerHTML = `El flujo de caja es negativo. Las pérdidas son: ${resultadoDelFlujo}`;
-    mensaje.classList.add("text-danger");
-    elementoPadre.append(mensaje);
+    mensaje.classList.add("text-danger", "h3");
   } else {
     mensaje.innerHTML = `El flujo de caja es positivo. Las ganancias son: ${resultadoDelFlujo}`;
-    mensaje.classList.add("text-success");
-    elementoPadre.append(mensaje);
+    mensaje.classList.add("text-success", "h3");
   }
 };
 
