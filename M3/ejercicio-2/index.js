@@ -9,7 +9,7 @@ const datosCreditos = [
     nombre: "Plan 002",
     capital: 300000,
     plazo: 180,
-    tasa: "0.1",
+    tasa: "0.10",
   },
   {
     nombre: "Plan 003",
